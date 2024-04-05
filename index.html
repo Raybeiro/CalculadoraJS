@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora com Javascript @Raybeiro</title>
+    <link rel="icon" href="https://cdn3d.iconscout.com/3d/premium/thumb/calculator-3671700-3061901.png?f=webp">
+</head>
+<body>
+    <div class="container">
+       <div class="calculadora">
+        <form>
+            <div class="resultado">
+                <input type="text" name="resultado" placeholder="0" class="inicial">
+            </div>
+            <div>
+                <input type="button" value="CE"onclick="resultado.value = ''"class="operador">
+                <input type="button" value="<" onclick="apagarUltimoCaractere()"class="operador">
+                <input type="button" value="." onclick="resultado.value += '.'" class="operador">
+                <input type="button" value="÷" onclick="resultado.value += '/'" class="operadores">
+            </div>
+            <div>
+                <input type="button" value="7" onclick="resultado.value += '7'">
+                <input type="button" value="8" onclick="resultado.value += '8'">
+                <input type="button" value="9" onclick="resultado.value += '9'">
+                <input type="button" value="x" onclick="resultado.value += '*'" class="operadores">
+            </div>
+            <div>
+                <input type="button" value="4" onclick="resultado.value += '4'">
+                <input type="button" value="5" onclick="resultado.value += '5'">
+                <input type="button" value="6" onclick="resultado.value += '6'">
+                <input type="button" value="-" onclick="resultado.value += '-'" class="operadores">
+            </div>
+            <div>
+                <input type="button" value="1" onclick="resultado.value += '1'">
+                <input type="button" value="2" onclick="resultado.value += '2'">
+                <input type="button" value="3" onclick="resultado.value += '3'">
+                <input type="button" value="+" onclick="resultado.value += '+'" class="operadores">
+            </div>
+            <div>
+                <input type="button" value="0" onclick="resultado.value += '0'" class="zero">
+                <input type="button" value="=" class="igual" onclick="calcularIgual()">;
+            </div>
+        </form>
+       </div> 
+    </div>
+
+<script src="./main.js"></script>
+</body>
+
+</html>
